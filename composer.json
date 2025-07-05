@@ -68,12 +68,5 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": [
-    {
-        "type": "vcs",
-        "url": "https://github.com/dandyphuong99/laravel-vietqr"
-    }
-],
-
+    "prefer-stable": true
 }
