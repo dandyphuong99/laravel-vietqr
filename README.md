@@ -12,7 +12,7 @@ Laravel package to generate VietQR data / VietQR code
 You can install the package via composer:
 
 ```bash
-composer require takashato/laravel-vietqr
+composer require dandyphuong99/laravel-vietqr:dev-main
 ```
 
 You can publish the config file with:
