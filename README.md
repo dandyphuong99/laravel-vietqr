@@ -15,18 +15,6 @@ You can install the package via composer:
 composer require dandyphuong99/laravel-vietqr:dev-main
 ```
 
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="laravel-vietqr-config"
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="laravel-vietqr-views"
-```
-
 ## Usage
 
 ```php
