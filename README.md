@@ -6,6 +6,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/takashato/laravel-vietqr.svg?style=flat-square)](https://packagist.org/packages/takashato/laravel-vietqr)
 
 Laravel package to generate VietQR data / VietQR code
+Cập nhật cho Laravel 11^
 
 ## Installation
 
@@ -18,8 +19,17 @@ composer require dandyphuong99/laravel-vietqr:dev-main
 ## Usage
 
 ```php
-$vietQr = new Takashato\VietQr();
-echo $vietQr->echoPhrase('Hello, Takashato!');
+use Takashato\VietQr\Facades\VietQr;
+use Takashato\VietQr\Enums\Currency;
+
+$qrCode = VietQr::create()
+    ->merchant('970422', '1234567890', 'NGUYEN VAN A') // BIN, account number, name
+    ->amount(50000)
+    ->additionalInfo('Thanh toan don hang 123')
+    ->generateQr(); // Trả về QR dạng SVG
+
+echo $qrCode;
+
 ```
 
 ## Testing
