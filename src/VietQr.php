@@ -4,7 +4,7 @@ namespace Takashato\VietQr;
 
 class VietQr
 {
-    public function create(): VietQrCode
+    public function make(): VietQrCode
     {
         return new VietQrCode();
     }
